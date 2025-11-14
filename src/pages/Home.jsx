@@ -6,7 +6,7 @@ export default function HomePage() {
 
   return (
     <div
-      className="relative h-screen w-full bg-contain bg-center  bg-no-repeat flex items-center"
+      className="relative h-screen w-full bg-cover bg-center  bg-no-repeat flex items-center"
       style={{
         backgroundImage: "url('/home-bg2.jpg')", 
       }}
@@ -45,3 +45,4 @@ export default function HomePage() {
   );
 
 }
+
