@@ -131,15 +131,14 @@ export default function StudentDashboard() {
                     </div>
 
                     {course.material && (
-                      <div className="mt-3">
-                        <iframe
-                          width="360"
-                          height="200"
-                          src={course.material.replace("watch?v=", "embed/")}
-                          className="rounded-lg shadow"
-                        ></iframe>
-                      </div>
-                    )}
+  <div className="mt-3 relative w-full pb-[56.25%]">
+    <iframe
+      src={course.material.replace("watch?v=", "embed/")}
+      className="absolute top-0 left-0 w-full h-full rounded-lg shadow"
+      allowFullScreen
+    ></iframe>
+  </div>
+)}
                   </div>
 
                   <div className="flex gap-3 mt-4 md:mt-0">
@@ -194,3 +193,4 @@ export default function StudentDashboard() {
     </div>
   );
 }
+
